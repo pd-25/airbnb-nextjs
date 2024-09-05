@@ -1,14 +1,17 @@
-import Image from "next/image";
 import Link from "next/link";
+import Categories from "./__components/Categories";
+import PropertyList from "./__components/properties/PropertyList";
 
 export default function Home() {
   return (
-    <main className="">
-     48.09
-     <Link href="https://www.youtube.com/watch?v=psB9vBxPqvE&list=WL&index=5&t=377s" >video</Link>
+    <main className="max-w-[1500px] mx-auto px-6">
+      <Categories />
 
-     <h1 className="text-airbnb">This is redefault</h1><br /><br />
-     <h1 className="text-airbnb-dark">This is dark one</h1>
+      <div className="mt-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+      <PropertyList />
+      </div>
+      1.15.00
+     <Link href="https://www.youtube.com/watch?v=psB9vBxPqvE&list=WL&index=5&t=377s" >video</Link>
     </main>
   );
 }
