@@ -25,7 +25,7 @@ export default function PropertyDetailPage() {
                     <hr />
 
                     <Link 
-                        href={`/landlords/2`}
+                        href={`/landords/2`}
                         className="py-6 flex items-center space-x-4"
                     >
                        
