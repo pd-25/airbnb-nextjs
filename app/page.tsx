@@ -10,7 +10,7 @@ export default function Home() {
       <div className="mt-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
       <PropertyList />
       </div>
-      2.17.00
+      2.54.00(zustand define)
      <Link href="https://www.youtube.com/watch?v=psB9vBxPqvE&list=WL&index=5&t=377s" >video</Link>
     </main>
   );

@@ -1,14 +1,15 @@
 "use client"
 
+import { useRef } from "react";
 import CustomButton from "../forms/CustomButton";
 
 const ConversationDetail = () => {
     
-
+    const messagesDiv = useRef<HTMLDivElement>(null);
     return (
         <>
             <div 
-                ref="messagesDiv"
+                ref={messagesDiv}
                 className="max-h-[400px] overflow-auto flex flex-col space-y-4"
             >
                 
@@ -40,7 +41,7 @@ const ConversationDetail = () => {
                 <CustomButton 
                     label='Send'
                     onClick={() => console.log("click")}
-                    // className="w-[100px]"
+                    className="w-[100px]"
                 />
             </div>
         </>
